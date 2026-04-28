@@ -112,7 +112,7 @@ def run_analysis(pcap_file):
             if count > 100:
                 alerts.append(f"High repeated traffic between {src} -> {dst} ({count} packets)")
 
-         # --- Final Readout ---
+         # Final Readout
         print("\n" + "=" * 30)
         print("       ANALYSIS RESULTS")
         print("=" * 30)
@@ -183,4 +183,3 @@ if __name__ == "__main__":
         target_file = sys.argv[1]
         run_analysis(target_file)
 
-#hiii
